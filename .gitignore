@@ -1,0 +1,56 @@
+# ==========================================================
+# BookMyBus LK — Professional .gitignore
+# Suitable for PHP, MySQL, XAMPP, Windows, and modern IDEs
+# ==========================================================
+
+# Local Configuration & Private Credentials (NEVER commit secrets)
+config.local.php
+config.php
+.env
+.env.*
+!.env.example
+
+# Database Backups & Export Dumps (Keep only schema.sql)
+*.sql.bak
+*.sql.gz
+*.dump
+*.backup
+backup/
+backups/
+
+# PHP & Server Logs
+*.log
+error_log
+access_log
+php_errors.log
+
+# Temporary, Cache, & Session Files
+tmp/
+temp/
+cache/
+sess_*
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Thumbs.db:encryptable
+desktop.ini
+
+# IDE & Text Editor Configurations
+.vscode/
+!.vscode/settings.json.example
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Dependencies (if Composer or npm are added later)
+vendor/
+node_modules/
